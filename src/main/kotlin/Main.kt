@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
         zippable = true
     )
 
+    //Character creation
     val character1: Character = Character(
         name = "Hatsune Miku",
         age = 19,
@@ -28,25 +29,9 @@ fun main(args: Array<String>) {
     )
 
     //Printing stuff
-    println("Your character is")
+    var hasil = character1.getCharacterDescription()
+    println(hasil)
 
-    println("Name: " + character1.name)
-    println("Age: " + character1.age)
-
-    println("==============================================")
-
-    println("Is using winter type uniform? : " + character1.uniform1.isWinter)
-    println("First uniform color is: " + character1.uniform1.color)
-
-    println("==============================================")
-
-    println("Second uniform is")
-    println("Is using : " + character1.uniform2.type)
-    println("Second uniform color is: " + character1.uniform2.color)
-
-    println("==============================================")
-
-    println("Third uniform is")
-    println("Is using :" + character1.uniform3.getUniform())
+    println("=====================================================")
 
 }
